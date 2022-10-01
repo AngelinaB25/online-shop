@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+site login
+{% endblock title %}
+{% block content %}
+<h1 class="login-heading">
+    site login
+</h1>
+<p class = "login-para">
+    use the next form to login
+</p>
+<div class="login-form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>
+            <input type ="submit" value="get in to the site">
+        </p>
+    </form>
+</div>
+{% endblock content %}

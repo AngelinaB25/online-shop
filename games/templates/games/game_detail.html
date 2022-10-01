@@ -17,4 +17,13 @@ Game Shop
     {{ game.title }}
 </h2>
 <h2 class = "game-detail-descriptin-2"> {{ game.description }}</h2>
+
+<p class="price">
+    {{ game.price }}
+</p>
+<p>
+    <a href="{% url 'home' %}">
+        go to main page
+    </a>
+</p>
 {% endblock content %}

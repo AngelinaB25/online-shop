@@ -3,6 +3,18 @@
 Game Shop
 {% endblock title %}
 {% block content %}
+<div class="nav">
+    <h1>
+        Game Shop
+    </h1>
+    <div class="login-logout-reg-nav">
+        {% if user.is_authenticated %}
+            <a href = "{% url 'logout' %}"> get out </a>
+        {% else %}
+            <a href="{%url 'login' %}">get in to the site</a>
+        {% endif %}
+    </div>
+</div>
 {% for game in game_list %}
 <div class="game">
     <h2>
