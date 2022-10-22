@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock title %}
+user registration
+{% block content %}
+<h1 class="signup-heading">
+    sign in
+</h1>
+<p class="signup-para">
+    use this next form registration
+</p>
+<div class="signup-form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>
+            <input type = "submit" value = "sign up">
+        </p>
+    </form>
+</div>
+{% endblock content %}
