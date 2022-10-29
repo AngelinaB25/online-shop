@@ -25,7 +25,7 @@ img {
     margin: 0;
     font-style: italic;
 }
-.login-form input[type=submit],.signup-form input[type = submit] {
+.login-form input[type=submit],.signup-form input[type = submit], .password-reset-form input[type=submit] {
     font-weight: bold;
     background-color: cornflowerblue;
     color: cornsilk;
@@ -33,11 +33,11 @@ img {
     font-size: 20px;
     width: auto;
 }
-.login-form label,.signup-form label {
+.login-form label,.signup-form label,.password-reset-form label {
     display: block;
     font-size: 20px;
 } 
-.login-form input, textarea,.signup-form input {
+.login-form input, textarea,.signup-form input,.password-rest-form input {
     margin-bottom: 10px;
     background-color: ghostwhite;
     border: 0;
@@ -45,11 +45,11 @@ img {
     font-size: 20px;
     width: 30%;
 }   
-.login-heading,.signup-heading {
+.login-heading,.signup-heading,.password-reset-heading {
     font-weight: normal;
     border-bottom: 1px solid grey;
 }
-.login-para,.signup-para {
+.login-para,.signup-para,.password-reset-para {
     font-size: 20px;
     font-weight: bold;
 }
@@ -66,3 +66,4 @@ img {
     text-decoration:none;
     color: darkblue;
 }
+
